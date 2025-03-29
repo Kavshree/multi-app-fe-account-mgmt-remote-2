@@ -10,6 +10,11 @@ module.exports = withModuleFederationPlugin({
 
   shared: {
     ...shareAll({ singleton: true, strictVersion: true, requiredVersion: 'auto' }),
+    'kavya-myuser-service-library': {
+      singleton: true,
+      strictVersion: false,
+      requiredVersion: '^0.0.1'
+    }
   },
 
 });
